@@ -1,3 +1,5 @@
+@types npm 기존 자바스크립트 api packge 에다가 type을 넣어준다
+
 tsc 라는 명령어는 ts => js 로 컴파일 해줌
 
 

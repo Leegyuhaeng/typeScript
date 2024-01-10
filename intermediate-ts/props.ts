@@ -14,7 +14,6 @@
 
 interface ISuperKey {
     [props: string]: string;
-
 }
 // ISuperKey props 는 객체의 키값을 자동으로 받는다
 function print(params: ISuperKey) {

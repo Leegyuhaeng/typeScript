@@ -7,7 +7,7 @@
 // // const testText3 = document.querySelector("#comeText");
 // // console.log((testText3 as HTMLElement).id);
 // const testText3 = document.querySelector("#comeText") as HTMLElement;
-// console.log(testText3.id);
+// console.log(testText3?.id);
 
 // 해당 DOM 기본 타입은 El | null 로 들어가기 때문에 이 변수의 프로퍼티를 접근을 하려면 type 에서 빨간불이 들어온다
 // 방법 1. 해당 프로퍼티 값이 확실하게 들어온다면 해당 변수 뒤에 ! 를 붙이게되면 빨간줄이 사라지게 된다

@@ -28,8 +28,8 @@ class UserInfo{
         return this._phone.slice(0,3) + '-' + this._phone.slice(3,7) + '-' + this._phone.slice(7,11);
     }
     set phone(newPhone:string) {
-         // console.log("set",newPhone);
         this._phone = newPhone;
+         console.log("set",this._phone);
     }
 
 }

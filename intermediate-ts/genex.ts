@@ -11,7 +11,7 @@ function prt<T extends string | number, U extends boolean | object>(params: T , 
     if(typeof  params2 === "boolean") console.log("boolean 입니다");
     else if (typeof params2 === "object") console.log("객체입니다");
 }
-prt<string, boolean>("하하하",true);
+prt("하하하",true);
 prt<number, object>(123, {});
 
 // 2 보장

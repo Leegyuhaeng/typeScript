@@ -27,7 +27,11 @@ enum ENumbers {
     "two",
     "three"
 }
-console.log("type", typeof  ENumbers); // object
+// 단일대상 검사할때는 keyof
+// function prt(params:any, key: keyof IBook) {}
+
+// 아래와 같이 객체를 넣어줄때는 interface 나 type 이나 enum 을 type of 로 하면된다
+console.log("type",ENumbers); // object
 const nums: typeof ENumbers = ENumbers;
 console.log(nums.three);
 

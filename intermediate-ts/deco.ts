@@ -28,7 +28,7 @@ function Controller(constructor: { new (email:string): any}): any {
 
 function Get(params: any):any {
 
-    // console.log("[GET]",params);
+    console.log("[GET]",params);
 }
 
 function Post(params: any):any {
@@ -37,7 +37,7 @@ function Post(params: any):any {
     return (
         constructor: any, // 대상 클래스
         propertyKey: string,    // 자신의 첫번째 프로퍼티
-        descriptor: PropertyDescriptor // metaData
+        descriptor: any // metaData
     ) => {
         constructor.postReq();
         constructor[propertyKey]();
@@ -49,10 +49,10 @@ function Post(params: any):any {
 }
 
 function Column(params: any):any {
-    // console.log("[Column]",params);
+    console.log("[Column]",params);
 }
 function test123(params: any):any {
-    // console.log("[test123] deco Factory" ,params);
+    console.log("[test123] deco Factory" ,params);
     //
     // return (
     //     constructor: Function,
@@ -79,6 +79,9 @@ class ExampleController {
     postReq() {
         console.log("POST Process===>");
     }
+    postReq2() {
+        console.log("POST Process===>222");
+    }
     @test123("test123")
     test123Req() {}
 }
@@ -88,3 +91,6 @@ console.log(new ExampleController("example@inflearn.com"));
 
 
 // 4. 유추 -> 뭔가 데코레이터에서 함수 안에 데이터를 조작할 수 있을거 같다..
+
+
+//실행구분 tsc --experimentalDecorators intermediate-ts/deco.ts ; node intermediate-ts/deco.js

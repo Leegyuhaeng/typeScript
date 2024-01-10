@@ -53,3 +53,4 @@ class ClassName<T> {
         return this._data;
     }
 }
+new ClassName<string>('tst')
