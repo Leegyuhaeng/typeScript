@@ -18,7 +18,8 @@ console.log(a,a.getResult());
 
 
 const add = (a,b): IAdd => {
-    //this as any as IAdd  => arrow Function 에서 this 는 global this 이지만 이런식으로 타입을 as로 우회 할수도 있다
+    //this as any as IAdd  => arrow Function 에서 this 는 global this 이지만 이런식으로 타입을 as로 우회 할수도 
+    // 글로벌 this 를 any 로 정의하고 다시 IAdd 로 정의
 
     // const _this = JSON.parse(JSON.stringify(this)) as any as IAdd // 깊은복사로인해 여러번 호출해도 할당된 변수의 값이 같음
     const _this = this as any as IAdd // 싱글톤 (하나의 this 를 공유)
