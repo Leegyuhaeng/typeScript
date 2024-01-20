@@ -1,7 +1,7 @@
 // abstract => 상속, 슈퍼-서브 , 부모-자식
 // interface => 구현 , 어떠한 기능을 설계 명세
 
-// class 는 interface 와 다르게 extents 를하면 super 를 해야된다
+// class 에서 부모 변수를 셋팅을 하려면 super 을 해야된다
 // interface 는 자동상속
 
 //추상 클래스
